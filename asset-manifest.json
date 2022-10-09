@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alpaca_generator/static/css/main.7ddaf9dd.css",
+    "main.js": "/alpaca_generator/static/js/main.8f2fa1ce.js",
+    "index.html": "/alpaca_generator/index.html",
+    "main.7ddaf9dd.css.map": "/alpaca_generator/static/css/main.7ddaf9dd.css.map",
+    "main.8f2fa1ce.js.map": "/alpaca_generator/static/js/main.8f2fa1ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ddaf9dd.css",
+    "static/js/main.8f2fa1ce.js"
+  ]
+}
