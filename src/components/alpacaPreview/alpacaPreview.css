@@ -1,13 +1,28 @@
-.alpaca-container {
-    width: 60vh;
-    min-width: 300px;
-    max-width: 500px;
-    height: 60vh;
-    min-height: 300px;
-    max-height: 500px;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 8px 8px 33px 0 rgba(0,0,0,0.75);
+@media screen and (min-width: 900px) {
+    .alpaca-container {
+        width: 60vh;
+        height: 60vh;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 8px 8px 33px 0 rgba(0, 0, 0, 0.75);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .alpaca-container {
+        width: 60vw;
+        height: 60vw;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 8px 8px 33px 0 rgba(0, 0, 0, 0.75);
+    }
+}
+
+.title {
+    color: #FFFFFF;
+    width: 90%;
+    font-size: 1em;
+    text-align: center;
 }
 
 .alpaca-image-container {

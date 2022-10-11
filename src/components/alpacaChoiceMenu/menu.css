@@ -1,6 +1,7 @@
 .menu-card {
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .menu-title {

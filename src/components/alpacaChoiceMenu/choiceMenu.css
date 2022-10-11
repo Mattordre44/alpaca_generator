@@ -1,8 +1,28 @@
-.choice-button-container {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-auto-flow: row;
-    grid-auto-rows: 50px;
+@media screen and (min-width: 1200px) {
+    .choice-button-container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-auto-flow: row;
+        grid-auto-rows: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .choice-button-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-auto-flow: row;
+        grid-auto-rows: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .choice-button-container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-auto-flow: row;
+        grid-auto-rows: 50px;
+    }
 }
 
 .choice-button{
@@ -16,6 +36,8 @@
     background-color: #f78154;
     text-align:center;
     transition: all 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .choice-button:hover{
     background-color:#da6d43;

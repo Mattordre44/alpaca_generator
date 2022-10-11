@@ -8,17 +8,17 @@ export default function AlpacaPreview() {
         <CurrentAlpacaContext.Consumer>
             {
                 value => (
-                    <div className={"alpaca-container"}>
-                        {
-                            Object.values(Category).map(category => (
+                    <>
+                        <h1 className={"title"}>Alpaca Generator</h1>
+                        <div className={"alpaca-container"}>
+                            {Object.values(Category).map(category => (
                                 <AlpacaImage
-                                    key={ `${category}-${value.currentAlpaca[category]}` }
-                                    category={ category }
-                                    property={ value.currentAlpaca[category] }
-                                />
-                            ))
-                        }
-                    </div>
+                                    key={`${category}-${value.currentAlpaca[category]}`}
+                                    category={category}
+                                    property={value.currentAlpaca[category]}/>
+                            ))}
+                        </div>
+                    </>
                 )
             }
         </CurrentAlpacaContext.Consumer>
