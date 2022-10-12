@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/alpaca_generator/static/css/main.abb93287.css",
-    "main.js": "/alpaca_generator/static/js/main.dc0948a9.js",
+    "main.css": "/alpaca_generator/static/css/main.1602e54f.css",
+    "main.js": "/alpaca_generator/static/js/main.e16ed0c7.js",
     "index.html": "/alpaca_generator/index.html",
-    "main.abb93287.css.map": "/alpaca_generator/static/css/main.abb93287.css.map",
-    "main.dc0948a9.js.map": "/alpaca_generator/static/js/main.dc0948a9.js.map"
+    "main.1602e54f.css.map": "/alpaca_generator/static/css/main.1602e54f.css.map",
+    "main.e16ed0c7.js.map": "/alpaca_generator/static/js/main.e16ed0c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.abb93287.css",
-    "static/js/main.dc0948a9.js"
+    "static/css/main.1602e54f.css",
+    "static/js/main.e16ed0c7.js"
   ]
 }
