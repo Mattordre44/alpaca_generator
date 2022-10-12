@@ -8,6 +8,9 @@ type utilsType = {
     [key in Category]: CategoryPropertiesType
 }
 
+/**
+ * Utils object load image resources for each property
+ */
 export const utils: utilsType = {
     [Category.accessories]: {
         earrings: require ("../alpaca_resources/accessories/earings.png"),

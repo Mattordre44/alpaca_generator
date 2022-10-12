@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
 import AlpacaPreview from "./components/alpacaPreview/alpacaPreview";
 import AlpacaProvider from "./alpacaProvider";
 import AlpacaPreviewMenu from "./components/alpacaPreviewMenu/alpacaPreviewMenu";
 import Menu from "./components/alpacaChoiceMenu/menu";
+import './App.css';
 
 function App() {
   return (

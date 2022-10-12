@@ -12,6 +12,10 @@ export default function ChoiceMenu(props: PropsType) {
 
     const context = useContext(CurrentAlpacaContext);
 
+    /**
+     * Callback method to handle on change property of the alpaca
+     * -> Call the method modifyAlpacaProperty of parent component
+     */
     const handleOnChangeProperty = useCallback(event => context.modifyAlpacaProperty(props.selectedCategory, event.target.value), [context, props.selectedCategory]);
 
     return (

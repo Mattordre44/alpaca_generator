@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
-import { AlpacaType } from "./types/alpacaType";
 import mergeImages from "merge-images";
+import { AlpacaType } from "./types/alpacaType";
 import { Category } from "./types/category";
 import { utils } from "./utils/utils";
 
@@ -30,13 +30,24 @@ export const CurrentAlpacaContext = React.createContext<CurrentAlpacaContextType
     modifyAlpacaProperty: () => {}
 })
 
+/**
+ * Function which return a random number between 0 and the specified number
+ * @param arrayLength the number of properties
+ */
 function getRandomInt(arrayLength: number) {
     return Math.floor(Math.random() * arrayLength);
 }
 
-export default function AlpacaProvider({ children }: { children: any}) {
+/**
+ * Function which define the provider of the current alpaca context
+ * @param children
+ */
+export default function AlpacaProvider({ children }: { children: any }) {
     const [currentAlpaca, setCurrentAlpaca] = useState<AlpacaType>(initialAlpaca);
 
+    /**
+     * Function which set current Alpaca state with random properties
+     */
     const generateRandomAlpaca = () => {
         setCurrentAlpaca({
             [Category.accessories]: Object.keys(utils[Category.accessories])[getRandomInt(Object.keys(utils[Category.accessories]).length)],
@@ -51,6 +62,9 @@ export default function AlpacaProvider({ children }: { children: any}) {
         })
     };
 
+    /**
+     * Function that allows to download the image
+     */
     const downloadAlpacaImage = useCallback(() => {
         mergeImages([
             utils.backgrounds[currentAlpaca.backgrounds],
@@ -71,9 +85,14 @@ export default function AlpacaProvider({ children }: { children: any}) {
         });
     }, [currentAlpaca]);
 
-    const modifyAlpacaProperty = useCallback((category: Category, value: string) => {
+    /**
+     * Method update the state of the current Alpaca for the specified category
+     * @param {Category} category the category to update
+     * @param {string} value the new value
+     */
+    const modifyAlpacaProperty = (category: Category, value: string) => {
         setCurrentAlpaca((prevState: AlpacaType) => ({...prevState, [category]: value}));
-    }, []);
+    };
 
     const value = {
         currentAlpaca: currentAlpaca,
