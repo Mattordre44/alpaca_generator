@@ -25,7 +25,7 @@ $ npm run build
 ```
 ___
 
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Typescript" width="50" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="ReactJS" width="50" />
-<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" width=50 />
-<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" width=50 />
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Typescript" width="50" align="left"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="ReactJS" width="50" align="left"/>
+<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" width=50 align="left"/>
+<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" width=50 align="left"/>
